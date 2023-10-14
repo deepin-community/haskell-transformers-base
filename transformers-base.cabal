@@ -1,5 +1,5 @@
 Name: transformers-base
-Version: 0.4.5.2
+Version: 0.4.6
 Category: Control
 Stability: experimental
 Synopsis: Lift computations from the bottom of a transformer stack
@@ -24,9 +24,10 @@ Extra-Source-Files:
   README.md
 
 Tested-With: GHC==7.0.4, GHC==7.4.2, GHC==7.6.3, GHC==7.8.4,
-             GHC==7.10.3, GHC==8.0.2, GHC==8.2.2, GHC==8.4.1
+             GHC==7.10.3, GHC==8.0.2, GHC==8.2.2, GHC==8.4.4, GHC==8.6.5,
+             GHC==8.8.4, GHC==8.10.5, GHC==9.0.1
 
-Cabal-Version: >= 1.8
+Cabal-Version: >= 1.10
 Build-Type: Simple
 
 Source-Repository head
@@ -39,6 +40,7 @@ Flag OrphanInstances
   Default: True
 
 Library
+  Default-Language: Haskell2010
   Build-Depends:
     base                >= 3 && < 5 && (< 4.4 || >= 4.5),
     stm                 >= 2.3,
